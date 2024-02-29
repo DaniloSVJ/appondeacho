@@ -1,15 +1,18 @@
 import 'react-native-gesture-handler'
 import React from 'react'
-import { StatusBar } from 'expo-status-bar';
+import UserContextProvider from './src/context/UserContext'
 import { StyleSheet, Text, View } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native'
-import MainStack from './src/stacks/MainStack'
+import { NavigationContainer } from '@react-navigation/native'
+import MainStack from './src/stacks/MainStack';
+
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <MainStack/>
-    </NavigationContainer>
+    <UserContextProvider>
+      <NavigationContainer>
+        <MainStack />
+      </NavigationContainer>
+    </UserContextProvider>
   );
 }
 

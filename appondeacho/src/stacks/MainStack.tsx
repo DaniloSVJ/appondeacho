@@ -5,10 +5,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Preload from '../screens/Preload'
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
-import { Text } from 'react-native';
+import MainTab from './MainTab';
+
 const {Navigator,Screen} = createNativeStackNavigator()
-
-
 
 export default function MainStack() {
   return (
@@ -19,9 +18,9 @@ export default function MainStack() {
       }}
     >
       <Screen name="Preload" component={Preload} />
-      {/* <Screen name="SignIn" component={SignIn} />
-      <Screen name="SignUp" component={SignUp} /> */}
-<Text>tetetett</Text>
+      <Screen name="MainTab" component={MainTab} />
+      <Screen name="SignIn" component={SignIn} />
+      <Screen name="SignUp" component={SignUp} />
     </Navigator>
   );
 }
