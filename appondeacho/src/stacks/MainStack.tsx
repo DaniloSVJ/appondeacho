@@ -6,6 +6,8 @@ import Preload from '../screens/Preload'
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
 import MainTab from './MainTab';
+import { Company } from '../screens/Company';
+import { RouteMaps } from '../screens/RouteMaps';
 
 const {Navigator,Screen} = createNativeStackNavigator()
 
@@ -21,6 +23,10 @@ export default function MainStack() {
       <Screen name="MainTab" component={MainTab} />
       <Screen name="SignIn" component={SignIn} />
       <Screen name="SignUp" component={SignUp} />
+      <Screen name="Company" component={Company} />
+      <Screen name="RouteMaps" component={RouteMaps} />
+
+
     </Navigator>
   );
 }

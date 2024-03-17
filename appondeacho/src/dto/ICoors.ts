@@ -2,7 +2,7 @@ export interface  ICoords{
   coords: IDcoords | null;
 }
 
-interface IDcoords{
+export interface IDcoords{
     "accuracy": number;
     "altitude": number;
     "altitudeAccuracy": number;

@@ -7,9 +7,6 @@ export const Container = styled.SafeAreaView`
     background-color: #2F4F4F;
     flex: 1;
 
-  
-
-
 `
 export const Scroller = styled.ScrollView`
     flex: 1;
